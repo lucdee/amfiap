@@ -39,12 +39,13 @@ const Login = () => {
     <div className={styles['busca-section']} style={{ display: "flex" , width: "100%"}}>
 <div className={styles['banner']} >
   
-  <p>LOCA DANCE</p>
+  <img src="./eylogo.png"></img>
+  <img src="./fiap.webp"></img>
   
 </div>
 <div className={styles['table']}>
       <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
-        <h2 className="mb-3" style={{ color: "white" }}>LOCA DANCE</h2>
+        <h2 className="mb-3" style={{ color: "white" }}>Ernst e Young</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">

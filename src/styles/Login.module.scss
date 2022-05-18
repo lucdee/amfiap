@@ -4,7 +4,7 @@
    background-color: blue;
 }
 .busca-section{
-   background-color: #15141b;
+   background-color: black;
 
  h2{
     width: 10%;
@@ -18,7 +18,10 @@
    width: 20%;
    background-color: #1b1923;
    display: grid;
-  
+  img{
+     margin: auto;
+     width: 60%;
+  }
    p{
       color: white;
       margin: auto;
@@ -33,15 +36,14 @@
 }
 
 body{
-   background-color: #15141b;
+   background-color: black;
  }
 
  .table{
     width: 40%;
    
     margin: auto;
-    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #63005b, 0 0 20px #63005b,
-    0 0 30px #63005b, 0 0 40px #63005b;
+
     @media only screen and (max-width: 800px) {
       width: 80%;
   }

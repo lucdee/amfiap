@@ -5,8 +5,7 @@
     margin-top: auto;
     height: 60%;
     padding: 0rem 2rem;
-    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 10px #63005b, 0 0 20px #63005b,
-    0 0 30px #63005b, 0 0 40px #63005b;
+   
     h2{
         color: white;
         margin-top: 20px;
@@ -15,7 +14,7 @@
 .busca-section-div{
     display: grid;
     height: 100vh;
-    background-color: #15141b;
+    background-color: black;
 }
 
 .logar{
@@ -31,5 +30,5 @@
 }
 
 body{
-    background-color: #15141b;
+    background-color: black;
   }

@@ -22,7 +22,7 @@ const Home = () => {
    <MenuLateral/>
       <div className={styles['menu']}>
     
-      <h1>LOCA DANCE</h1>
+      <h1>LOGO</h1>
       <div className={styles['menu-user']}>
    <p> {user && user.email} </p> 
         <Button variant="primary" onClick={handleLogout}>
