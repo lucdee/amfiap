@@ -2,8 +2,8 @@
    
 height: 60px;
 width: 55px;
-background-color: #1b1923;
-transition: 1s;
+background-color: #FFE600;
+
 
 }
 .toggler-button {
@@ -34,7 +34,7 @@ transition: 1s;
     display: block;
     width: 100%;
     height: 4px;
-    background: white;
+    background: black;
     transition: transform 0.5s ease 0s, opacity 0.2s;
   }
   
@@ -54,7 +54,8 @@ transition: 1s;
     height: 100vh;
     width: 300px;
     background-color: #1b1923;
-    transition: 1s;
+ 
+    position: absolute;
     @media only screen and (max-width: 650px) {
       width: 100%;
       position: absolute;

@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import styles from '../styles/Home.module.scss';
-import MenuLateral from "./MenuLateral";
+import Card from "./Card";
+import Layout from "./Layout";
+
 
 const Home = () => {
   const { logOut, user } = useUserAuth();
@@ -18,22 +19,20 @@ const Home = () => {
   };
   console.log(user)
   return (
-    <div style={{display: "flex"}}>
-   <MenuLateral/>
-      <div className={styles['menu']}>
-    
-      <h1>LOGO</h1>
-      <div className={styles['menu-user']}>
-   <p> {user && user.email} </p> 
-        <Button variant="primary" onClick={handleLogout}>
-          Sair
-        </Button>
-        </div>
-      </div>
-     
-      
+    <>
    
-    </div>
+      <Layout/>
+      <div className={styles['back']}>
+     <img src="/back.png"></img>
+      </div>
+      <div className={styles['vagas']}>
+     <Card/>
+     <Card/>
+     <Card/>
+     <Card/>
+     
+      </div>
+      </>
   );
 };
 

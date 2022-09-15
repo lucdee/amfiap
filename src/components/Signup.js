@@ -46,6 +46,7 @@ const Signup = () => {
             />
           </Form.Group>
 
+
           <div className="d-grid gap-2">
             <Button variant="primary" type="Submit">
               Registrar
