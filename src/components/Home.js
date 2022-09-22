@@ -26,11 +26,14 @@ const Home = () => {
      <img src="/back.png"></img>
       </div>
       <div className={styles['vagas']}>
+      <div className={styles['vagas-content']}>
      <Card/>
      <Card/>
+     </div>
+     <div className={styles['vagas-content']}>
      <Card/>
      <Card/>
-     
+     </div>
       </div>
       </>
   );

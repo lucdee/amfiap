@@ -3,9 +3,10 @@ import styles from "../styles/Card.module.scss";
 
 const Card = ({ card, id, img }) => {
   return (
-    <a className={styles['card']} >
+    <button className={styles['card']}> <a>
     
-    </a>
+    </a></button>
+   
   );
 };
 
