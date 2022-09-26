@@ -53,8 +53,8 @@ background-color: #FFE600;
   .menu-lateral-open{
     height: 100vh;
     width: 300px;
-    background-color: #1b1923;
- 
+    background-color: #ffe600;
+    z-index: 99;
     position: absolute;
     @media only screen and (max-width: 650px) {
       width: 100%;

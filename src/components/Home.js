@@ -25,14 +25,18 @@ const Home = () => {
       <div className={styles['back']}>
      <img src="/back.png"></img>
       </div>
+      <div className={styles['title']}> <h2>Selecione qual area deseja se candidatar</h2></div>
       <div className={styles['vagas']}>
+    
       <div className={styles['vagas-content']}>
-     <Card/>
-     <Card/>
+       
+     <Card id={"Desenvolvimento"} img={"./dev.jpg"}/>
+     <Card id={"Marketing"} img={"./marketing.jpg"}/>
+   
      </div>
      <div className={styles['vagas-content']}>
-     <Card/>
-     <Card/>
+     <Card id={"Design"}  img={"./design.png"}/>
+     <Card id={"Gestão"}  img={"./gestão.jpg"}/>
      </div>
       </div>
       </>
