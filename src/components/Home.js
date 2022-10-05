@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-bootstrap";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import styles from '../styles/Home.module.scss';
@@ -29,8 +30,9 @@ const Home = () => {
       <div className={styles['vagas']}>
     
       <div className={styles['vagas-content']}>
-       
-     <Card id={"Desenvolvimento"} img={"./dev.jpg"}/>
+
+    <Card id={"Desenvolvimento"} img={"./dev.jpg"}/>
+    
      <Card id={"Marketing"} img={"./marketing.jpg"}/>
    
      </div>

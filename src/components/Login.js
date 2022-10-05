@@ -44,7 +44,7 @@ const Login = () => {
   
 </div>
 <div className={styles['table']}>
-      <div  className="p-4 box" style={{ backgroundColor: "#1b1923" }}>
+      <div  className="p-4 box" style={{ backgroundColor: "#1b1923" , borderRadius: "10px"}}>
         <h2 className="mb-3" style={{ color: "white" }}>Ernst e Young</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <Form onSubmit={handleSubmit}>
@@ -81,7 +81,7 @@ const Login = () => {
         </div>
       </div>
       
-      <div className="p-4 box mt-3 text-center" style={{ backgroundColor: "#1b1923" }}>
+      <div className="p-4 box mt-3 text-center" style={{ backgroundColor: "#1b1923", borderRadius: "10px"}}>
       <h1 style={{ fontSize: "20px" , color: "white"}}> Ou </h1> <hr style={{ backgroundColor: "white" }} /> 
         <Link to="/signup"><p>Crie sua conta</p></Link>
       </div>
