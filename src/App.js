@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Dev from "./components/Dev";
 import Desenvolvimento from "./components/Dev";
+import Back from "./components/back";
 
 function App() {
   return (
@@ -28,6 +29,14 @@ function App() {
                 element={
                   <ProtectedRoute>
                     <Desenvolvimento />
+                  </ProtectedRoute>
+                }
+              />
+                   <Route
+                path="/back"
+                element={
+                  <ProtectedRoute>
+                    <Back />
                   </ProtectedRoute>
                 }
               />

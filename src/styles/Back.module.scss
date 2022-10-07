@@ -1,0 +1,56 @@
+.back{
+    width: 90%;
+ 
+ 
+   height: 80vh;
+   margin:30px auto;
+background-color: white;
+border-radius: 20px;
+max-width: 1200px;
+border-width: 10px;
+
+border: 10px solid #ffe600;
+button{
+  color: rgb(0, 0, 0);
+  background-color: #ffe600;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 70px;
+  margin: auto; 
+  font-weight: bold; 
+}
+}
+
+
+.back-title{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+ 
+  padding: 20px;
+
+  
+}
+
+a{
+  color: white;
+  cursor: pointer;
+}
+
+.alts{
+  display: grid;
+}
+
+.altsp{
+  display: flex;
+  width: 100%;
+  height:100%;
+ p{
+  
+ font-size: 40px;
+ margin: auto;
+ }
+}

@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 import styles from '../styles/Home.module.scss';
@@ -10,15 +9,17 @@ import Layout from "./Layout";
 const Home = () => {
   const { logOut, user } = useUserAuth();
   const navigate = useNavigate();
+ 
   const handleLogout = async () => {
     try {
       await logOut();
       navigate("/");
+      
     } catch (error) {
       console.log(error.message);
     }
   };
-  console.log(user)
+  localStorage.setItem('coin', 0);
   return (
     <>
    
