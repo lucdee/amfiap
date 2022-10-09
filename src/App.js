@@ -8,43 +8,49 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 import Dev from "./components/Dev";
 import Desenvolvimento from "./components/Dev";
 import Back from "./components/back";
+import SendEmail from "./components/sendEmail";
 
 function App() {
   return (
     <div style={{ width: "100%" }}>
-   
-    
-          <UserAuthContextProvider>
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <ProtectedRoute>
-                    <Home />
-                  </ProtectedRoute>
-                }
-              />
-               <Route
-                path="/desenvolvimento"
-                element={
-                  <ProtectedRoute>
-                    <Desenvolvimento />
-                  </ProtectedRoute>
-                }
-              />
-                   <Route
-                path="/back"
-                element={
-                  <ProtectedRoute>
-                    <Back />
-                  </ProtectedRoute>
-                }
-              />
-              <Route path="/" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-            </Routes>
-          </UserAuthContextProvider>
-
+      <UserAuthContextProvider>
+        <Routes>
+          <Route
+            path="/home"
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/desenvolvimento"
+            element={
+              <ProtectedRoute>
+                <Desenvolvimento />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/back"
+            element={
+              <ProtectedRoute>
+                <Back />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/backsend"
+            element={
+              <ProtectedRoute>
+                <SendEmail />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </UserAuthContextProvider>
     </div>
   );
 }

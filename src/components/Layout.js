@@ -21,29 +21,23 @@ const Layout = ({coin}) => {
   console.log(user)
 
   return (
-    <div style={{display: "flex"}}>
-      
-   <MenuLateral/>
-      <div className={styles['menu']}>
-    
-      <img src="/logo-black.png"></img>
-      <div className={styles['menu-user']}>
-   
-    <div className={styles['coindiv']}>
-      <p>{localStorage.getItem('coin')}</p>
-     <GiTwoCoins color="black"/>
-     </div> 
-   <p> {user && user.email}  </p> 
-   <Button variant="primary" onClick={handleLogout}>
-          Sair
-        </Button>
-  
-       
+    <div style={{ display: "flex" }}>
+      <MenuLateral />
+      <div className={styles["menu"]}>
+        <a href="/home">
+          <img src="/logo-black.png"></img>
+        </a>
+        <div className={styles["menu-user"]}>
+          <div className={styles["coindiv"]}>
+            <p>{localStorage.getItem("coin")}</p>
+            <GiTwoCoins color="black" />
+          </div>
+          <p> {user && user.email} </p>
+          <Button variant="primary" onClick={handleLogout}>
+            Sair
+          </Button>
         </div>
       </div>
-     
-      
-   
     </div>
   );
 };
