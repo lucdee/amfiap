@@ -6,7 +6,7 @@ const CardWork = ({ card, id, img, link, aberto }) => {
     <a href={!aberto ? null : link} className={styles["card"]}>
       <img src={`${img}`}></img>
       <h3>{id}</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <p>Cadidatar</p>
       {!aberto && <div className={styles["card-blocked"]}></div>}
     </a>
   );

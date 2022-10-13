@@ -39,10 +39,9 @@ const Desenvolvimento = () => {
       <div className={styles["desc"]}>
         <h2>Bem vindo a área de Desenvolvimento</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.
+          O desenvolvedor de TI é o profissional responsável por planejar,
+          produzir e gerenciar o desenvolvimento de um sistema, seja ele site,
+          aplicativo ou software para empresas físicas.
         </p>
       </div>
       <div className={styles["divisor"]}></div>

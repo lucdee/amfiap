@@ -6,7 +6,7 @@ const CardCursos = ({ card, id, img, link, aberto }) => {
     <a href={link} className={styles["card"]}>
       <img src={`${img}`}></img>
       <h3>{id}</h3>
-      <p>Lorem ipsum dolor sit amet</p>
+      <p>Acessar</p>
     </a>
   );
 };
